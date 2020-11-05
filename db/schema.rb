@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 2020_11_04_080941) do
     t.text "profile"
     t.text "occupation"
     t.text "position"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
