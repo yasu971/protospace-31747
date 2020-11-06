@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   def index
-    # インスタンス変数@prototypesを定義し、すべてのプロトタイプの情報を代入する
+    @prototype = Prototype.all
   end
 
   def new
